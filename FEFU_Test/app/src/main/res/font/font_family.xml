@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font
+        android:font="@font/press_start"
+        android:fontStyle="normal"
+        android:fontWeight="1" />
+
+    <font
+        android:font="@font/sunflower_mid"
+        android:fontStyle="normal"
+        android:fontWeight="1" />
+
+    <font
+        android:font="@font/sunflower_thin"
+        android:fontStyle="normal"
+        android:fontWeight="1" />
+
+</font-family>

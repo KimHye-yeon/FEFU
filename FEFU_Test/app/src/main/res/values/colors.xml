@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Basic Color -->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#c4c4c4</color>
+
+    <!-- Basic Custom Color -->
+    <color name="background">#d7f7f5</color>
+    <color name="font_dark">#009975</color>
+    <color name="font_light">#8fe0be</color>
+    <color name="location">#ff8f8f</color>
+
+    <!-- Sign In -->
+    <color name="signIn_menu_btn">#82acff</color>
+    <color name="signIn_background">#b7d7f7</color>
+    <color name="signIn_font">#5e43cc</color>
+    <color name="signIn_ok_btn">#673dbf</color>
+
+    <!-- Sign Up -->
+    <color name="signUp_menu_btn">#8f71ff</color>
+    <color name="signUp_background">#247e6c</color>
+    <color name="signUp_font">#d7f7f5</color>
+    <color name="singUp_ok_btn">#a9eec2</color>
+
+    <!-- About Us -->
+    <color name="aboutUs_menu_btn">#866ec7</color>
+    <color name="aboutUs_green_font">#348272</color>
+    <color name="aboutUs_purple_font">#673dbf</color>
+
+    <!--  -->
+</resources>
