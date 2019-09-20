@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "847434853050",
+    "firebase_url": "https://toearthtous.firebaseio.com",
+    "project_id": "toearthtous",
+    "storage_bucket": "toearthtous.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847434853050:android:dcae49af9a6b3c934bb083",
+        "android_client_info": {
+          "package_name": "com.example.toearthtous"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847434853050-lk2ptibh5m0vjopdmjss0stuck9hd3j5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.toearthtous",
+            "certificate_hash": "427f5979fd231b2d4e63353d67b72fbfb33328b0"
+          }
+        },
+        {
+          "client_id": "847434853050-02gci75hn8uit8vtl3go5nd2bkn9kveu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0bFqERjja-MZh46eFN5lkDiH7DsBOfBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847434853050-02gci75hn8uit8vtl3go5nd2bkn9kveu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
