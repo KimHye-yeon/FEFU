@@ -5,7 +5,6 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
@@ -17,10 +16,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.iid.FirebaseInstanceId
 import com.google.firebase.storage.FirebaseStorage
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login.progress_bar
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.jar.Manifest
 
 class MainActivity : AppCompatActivity(),BottomNavigationView.OnNavigationItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,7 +50,7 @@ class MainActivity : AppCompatActivity(),BottomNavigationView.OnNavigationItemSe
         FirebaseFirestore.getInstance().collection("pushtokens").document(uid!!).set(map)
     }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        override fun onNavigationItemSelected(item: MenuItem): Boolean {
         setToolbarDefault()
         when (item.itemId){
             R.id.action_home -> {
