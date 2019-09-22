@@ -18,4 +18,6 @@
     <color name="darck_gray">#3b3b3b</color>
     <color name="logo_color">#008c62</color>
     <color name="navigation_color">#f7f7f7</color>
+    <color name="button_background">#a9eec2</color>
+    <color name="button_textcolor">#156b6b</color>
 </resources>
