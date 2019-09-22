@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/listitem_background">
     <!-- Title Layout -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +23,8 @@
             android:id="@+id/detailviewitem_profile_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="User Name" />
+            tools:text="User Name"
+            android:fontFamily="@font/sunflower"/>
     </LinearLayout>
     <!-- Content ImageView -->
     <ImageView
@@ -34,30 +37,46 @@
     <!-- favorite & comment -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="8dp">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
         <ImageView
             android:id="@+id/detailviewitem_favorite_imageview"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            app:srcCompat="@drawable/ic_favorite_border" />
+            android:padding="3dp"
+            app:srcCompat="@drawable/like" />
+
         <ImageView
             android:id="@+id/detailviewitem_comment_imageview"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:src="@drawable/ic_chat_black" />
+            android:src="@drawable/chat"
+            android:padding="3dp"
+            android:layout_marginLeft="5dp"/>
     </LinearLayout>
+
     <TextView
         android:id="@+id/detailviewitem_favoritecounter_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        tools:text="좋아요 0개" />
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/sunflower"
+        android:textSize="15sp"
+        tools:text="좋아요 0개"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"/>
+
     <TextView
         android:id="@+id/detailviewitem_explain_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
         android:layout_marginBottom="35dp"
-        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/sunflower"
+        android:textSize="14sp"
         tools:text="사진 내용" />
 </LinearLayout>
