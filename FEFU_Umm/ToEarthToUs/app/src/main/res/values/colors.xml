@@ -16,4 +16,6 @@
 
     <color name="background">#d7f7f5</color>
     <color name="darck_gray">#3b3b3b</color>
+    <color name="logo_color">#008c62</color>
+    <color name="navigation_color">#f7f7f7</color>
 </resources>
