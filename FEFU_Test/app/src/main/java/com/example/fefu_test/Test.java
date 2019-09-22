@@ -33,8 +33,8 @@ public class Test extends AppCompatActivity {
                     ShareLinkContent content = new ShareLinkContent.Builder()
                             .setContentTitle("공유할 컨텐츠 타이틀")// 링크 컨텐츠 제목
                             .setContentDescription("공유할 컨텐츠 내용")// 링크 컨텐츠 내용
-                            .setImageUrl(Uri.parse("공유할 이미지 URL"))// 썸네일 이미지 URL
-                            .setContentUrl(Uri.parse("공유할 웹사이트 주소"))
+                            .setImageUrl(Uri.parse("https://ifh.cc/v-jnGJo"))// 썸네일 이미지 URL
+                            .setContentUrl(Uri.parse("https://www.naver.com/"))
                             .build();
 
                     shareDialog.show(content, ShareDialog.Mode.FEED);

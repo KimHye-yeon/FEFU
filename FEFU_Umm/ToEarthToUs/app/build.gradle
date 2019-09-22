@@ -51,11 +51,13 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:12.0.0'
     //Okhttp 라이브러리
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
-    //Gson 라이브러리
+    //G son 라이브러리
     implementation 'com.google.code.gson:gson:2.8.4'
 
 
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'

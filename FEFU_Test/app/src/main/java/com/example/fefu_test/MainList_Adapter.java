@@ -1,6 +1,8 @@
 package com.example.fefu_test;
 
+import android.app.Activity;
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,12 +12,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.FacebookSdk;
+import com.facebook.share.model.ShareLinkContent;
+import com.facebook.share.widget.ShareDialog;
+
 import java.util.ArrayList;
 
 public class MainList_Adapter extends BaseAdapter {
 
     Context context;
     ArrayList<Main_Listitem> main_listitems;
+    ShareDialog shareDialog = new ShareDialog();
 
     private ImageView userimage_view;
     private ImageView location_icon;
@@ -109,8 +116,24 @@ public class MainList_Adapter extends BaseAdapter {
 
                 case R.id.share_btn:
                     Toast.makeText(context.getApplicationContext(), "share clicked", Toast.LENGTH_SHORT).show();
+                    Share_Item();
                     break;
             }
         }
     };
+
+    public void Share_Item() {
+        FacebookSdk.sdkInitialize(context.getApplicationContext()); // Facebook SDK초기화
+
+        if(ShareDialog.canShow(ShareLinkContent.class)) {
+            ShareLinkContent content = new ShareLinkContent.Builder()
+                    .setContentTitle("공유할 컨텐츠 타이틀")// 링크 컨텐츠 제목
+                    .setContentDescription("공유할 컨텐츠 내용")// 링크 컨텐츠 내용
+                    .setImageUrl(Uri.parse("https://ifh.cc/v-jnGJo"))// 썸네일 이미지 URL
+                    .setContentUrl(Uri.parse("https://www.naver.com/"))
+                    .build();
+
+            shareDialog.show(content, ShareDialog.Mode.FEED);
+        }
+    }
 }

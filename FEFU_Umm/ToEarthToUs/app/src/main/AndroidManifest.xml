@@ -12,13 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".navigation.CommentActivity"></activity>
+        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".navigation.CommentActivity" />
         <activity android:name=".navigation.UserFragment" />
         <activity android:name=".navigation.GridFragment" />
         <activity android:name=".navigation.DetailViewFragment" />
         <activity android:name=".navigation.AlarmFragement" />
         <activity android:name=".navigation.AddPhotoActivity" />
-        <activity  android:name="androidx.multidex.MultiDexApplication"></activity>
+        <activity android:name="androidx.multidex.MultiDexApplication" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -47,16 +48,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-
-        <!--안드로이드 8.0이상 푸시 처리 추가 코드-->
+        <activity android:name=".MainActivity" /> <!-- 안드로이드 8.0이상 푸시 처리 추가 코드 -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/push_icon" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
-
     </application>
 
 </manifest>

@@ -1,9 +1,15 @@
 package com.example.fefu_test;
 
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+
+import com.facebook.FacebookSdk;
+import com.facebook.share.model.ShareLinkContent;
+import com.facebook.share.widget.ShareDialog;
 
 import java.util.ArrayList;
 
@@ -41,4 +47,5 @@ public class MainActivity extends AppCompatActivity {
 
         listView.setAdapter(mainList_adapter);
     }
+
 }
