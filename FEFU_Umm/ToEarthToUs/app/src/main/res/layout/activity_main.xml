@@ -13,7 +13,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="16dp">
 
             <TextView
                 android:id="@+id/toolbar_title_image"
@@ -44,6 +47,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="22dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/ic_arrow_back" />
 
             <TextView
@@ -59,15 +63,16 @@
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
+    <!-- ProgressBar -->
     <LinearLayout
         android:id="@+id/toolbar_division"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/my_toolbar"
+        android:layout_marginTop="10dp"
         android:background="@color/colorDivision"
         android:orientation="horizontal" />
 
-    <!-- ProgressBar -->
     <ProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
@@ -98,9 +103,8 @@
         android:layout_marginLeft="2dp"
         android:layout_marginEnd="-2dp"
         android:layout_marginRight="-2dp"
-        android:layout_marginBottom="1dp"
-        app:itemBackground="@color/navigation_color"
-        app:itemIconTint="@color/colorNavIcon"
+        app:itemBackground="@color/button_background"
+        app:itemIconTint="@color/darck_gray"
         app:itemTextColor="@color/colorNavIcon"
         app:menu="@menu/bottom_navigation_main" />
 </RelativeLayout>
