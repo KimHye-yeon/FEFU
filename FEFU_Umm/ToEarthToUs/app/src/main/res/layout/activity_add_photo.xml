@@ -5,6 +5,22 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="371dp"
+        android:layout_height="335dp"
+        android:layout_below="@+id/toolbar_division"
+        android:layout_alignBottom="@+id/addphoto_btn_upload"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-15dp"
+        android:background="@drawable/add_photobox_edge" />
+
     <ProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
@@ -63,9 +79,9 @@
         android:layout_height="100dp"
         android:layout_below="@id/toolbar_division"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:padding="10dp"
@@ -80,7 +96,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="7dp"
         android:layout_marginBottom="8dp"
@@ -109,7 +125,6 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="18dp"
         android:layout_marginLeft="18dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="17dp"
         android:layout_marginRight="17dp"
         android:layout_marginBottom="8dp"
