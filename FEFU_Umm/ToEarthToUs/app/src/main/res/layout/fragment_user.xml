@@ -8,10 +8,12 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="113dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/add_photobox_edge"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -22,11 +24,12 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="0dp"
-            android:contentDescription="@string/profile"
-            android:padding="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/profile"
+            android:padding="15dp"
             tools:src="@drawable/user" />
 
         <Button
@@ -36,11 +39,11 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginEnd="18dp"
             android:layout_marginRight="18dp"
-            android:layout_marginBottom="1dp"
+            android:layout_marginBottom="15dp"
             android:layout_toEndOf="@+id/account_iv_profile"
             android:layout_toRightOf="@+id/account_iv_profile"
             android:background="@drawable/follow_button_style"
@@ -58,9 +61,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="-31dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="9dp"
             android:layout_marginRight="9dp"
             android:layout_toRightOf="@id/account_iv_profile"
